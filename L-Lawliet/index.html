@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>L Lawliet — Detective Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Raleway:wght@100;200;300;400;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+<!-- <body> -->
+<body class="obsidian-theme">
+<!-- CURSOR -->
+<div id="cursor-ring"></div>
+<div id="cursor-dot"></div>
+<div id="mouse-light"></div>
+<div id="particles"></div>
+
+<!-- NAV -->
+<nav id="navbar">
+ 
+  <div class="logo-wrap">
+    <img src="images/logo.jpg"alt="L Logo" class="logo" id="themeToggle">
+  </div>
+  
+  <ul class="nav-links">
+    <li><a href="#hero" class="active">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#cases">Cases</a></li>
+    <li><a href="#analysis">Analysis</a></li>
+    <li><a href="#methods">Methods</a></li>
+    <li><a href="#notes">Notes</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#hero">Home</a>
+  <a href="#cases">Cases</a>
+  <a href="#methods">Analysis</a>
+  <a href="#about">Profile</a>
+  <a href="#notes">Notes</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-vignette"></div>
+  <div class="hero-side-text">DETECTIVE PORTFOLIO / L LAWLIET / 2007</div>
+
+  <div class="case-files" id="caseFiles"></div>
+
+  <div class="hero-content">
+    <div class="hero-label">Detective Portfolio</div>
+    <h1 class="hero-title">L<br>LAWLIET</h1>
+    <p class="hero-subtitle">Independent Consultant Detective</p>
+    <p class="hero-quote">
+      "When solving a case,<br>
+      I don't act on emotion.<br>
+      I act on facts.<br>
+      Until the truth reveals itself."
+    </p>
+    <a href="#cases" class="btn-primary">
+      <span>Explore Cases</span>
+      <span class="btn-arrow">→</span>
+    </a>
+  </div>
+
+  
+  <div class="scroll-indicator">
+    <div class="scroll-line"></div>
+    <span>Scroll to explore</span>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="profile-card reveal-left">
+        <div class="profile-img-wrap">
+          <div class="profile-placeholder profile-photo">
+            <div class="profile-L">L</div>
+            <div class="profile-scan"></div>
+          </div>
+        </div>
+        <div class="profile-info">
+          <table>
+            <tr><td>Name</td><td>Ryuzaki</td></tr>
+            <tr><td>Known As</td><td>L</td></tr>
+            <tr><td>Occupation</td><td>Detective</td></tr>
+            <tr><td>Base</td><td>Unknown</td></tr>
+            <tr><td>Notes</td><td>Low Profile</td></tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="about-details reveal">
+        <div class="section-label">About L</div>
+        <h2 class="section-title">World's Greatest<br>Detective</h2>
+        <p class="about-desc">
+          An enigmatic figure operating at the intersection of logic and intuition. 
+          With a 92% case resolution rate spanning over a decade, L Lawliet applies 
+          systematic analytical methodology to the world's most impossible cases. 
+          No case too complex. No pattern too obscure.
+        </p>
+        <p class="about-desc">
+          Operating under strict anonymity, direct engagement is strictly by referral 
+          through authorized channels. All communication is encrypted and monitored.
+        </p>
+        <div class="about-tags">
+          <span class="tag">Criminal Analysis</span>
+          <span class="tag">Pattern Recognition</span>
+          <span class="tag">Forensic Logic</span>
+          <span class="tag">Behavioral Psychology</span>
+          <span class="tag">Cryptography</span>
+        </div>
+      </div>
+
+      <div class="quote-card quates-paper reveal-right">
+        <p class="quote-text">
+          "When solving a case,<br>
+          I don't act on emotion.<br>
+          I act on facts. Until<br>
+          the truth reveals itself."
+        </p>
+        <div class="quote-sig">L</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- STATS -->
+<section id="stats">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-card reveal">
+        <svg class="stat-icon" viewBox="0 0 44 44" fill="none" stroke="#c8a96e" stroke-width="1.2">
+          <rect x="6" y="8" width="32" height="28" rx="2"/>
+          <path d="M14 8V4M30 8V4M6 18h32"/>
+          <path d="M14 26h4M14 32h8" stroke-linecap="round"/>
+          <circle cx="30" cy="30" r="6" stroke="#c8a96e"/>
+          <path d="M28 30l1.5 1.5L32 28" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div class="stat-value" data-count="47">0</div>
+        <div class="stat-label">Cases Solved</div>
+      </div>
+      <div class="stat-card reveal" style="transition-delay:0.1s">
+        <svg class="stat-icon" viewBox="0 0 44 44" fill="none" stroke="#c8a96e" stroke-width="1.2">
+          <circle cx="22" cy="22" r="16"/>
+          <path d="M22 12v10l7 4" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M22 6v2M22 36v2M6 22h2M36 22h2"/>
+        </svg>
+        <div class="stat-value" data-count="10">0</div>
+        <div class="stat-label">Years Active</div>
+      </div>
+      <div class="stat-card reveal" style="transition-delay:0.2s">
+        <svg class="stat-icon" viewBox="0 0 44 44" fill="none" stroke="#c8a96e" stroke-width="1.2">
+          <circle cx="22" cy="22" r="16"/>
+          <path d="M14 22l6 6 10-12" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div class="stat-value" data-count="92">0</div>
+        <div class="stat-label">Success Rate</div>
+      </div>
+      <div class="stat-card reveal" style="transition-delay:0.3s">
+        <svg class="stat-icon" viewBox="0 0 44 44" fill="none" stroke="#c8a96e" stroke-width="1.2">
+          <path d="M22 8 L28 18 L40 18 L30 26 L34 38 L22 30 L10 38 L14 26 L4 18 L16 18 Z"/>
+        </svg>
+        <div class="stat-value">L</div>
+        <div class="stat-label">Logic First</div>
+      </div>
+      <div class="stat-card reveal" style="transition-delay:0.4s">
+        <svg class="stat-icon" viewBox="0 0 44 44" fill="none" stroke="#c8a96e" stroke-width="1.2">
+          <path d="M22 6 C16 6 10 12 10 20 C10 28 14 34 22 38 C30 34 34 28 34 20 C34 12 28 6 22 6Z"/>
+          <path d="M18 20 C18 18 20 16 22 16 C24 16 26 18 26 20 C26 24 22 26 22 28" stroke-linecap="round"/>
+          <circle cx="22" cy="32" r="1.5" fill="#c8a96e"/>
+        </svg>
+        <div class="stat-value">∞</div>
+        <div class="stat-label">Motive: Justice</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+
+
+<!-- ========================= -->
+<!-- CASES SECTION START -->
+<!-- ========================= -->
+
+<section id="cases" class="cases-section">
+
+    <div class="cases-top reveal">
+
+        <div>
+            <p class="cases-label reveal">ARCHIVE DATABASE</p>
+            <h2 class="cases-title reveal">CLOSED FILES</h2>
+        </div>
+
+        <button class="view-all" id="viewAllBtn">
+            View All Cases →
+        </button>
+
+    </div>
+
+    <!-- MAIN 3 CASES -->
+
+    <div class="cases-grid">
+
+        <!-- CASE 01 -->
+
+        <div class="case-card reveal">
+
+            <img src="images/case3.jpg" alt="Kira Case">
+
+            <div class="case-overlay">
+
+                <span>01</span>
+
+                <h3>Kira Investigation</h3>
+
+                <p>
+                    Global execution case involving unexplained
+                    cardiac deaths and supernatural patterns.
+                </p>
+
+                <a href="#">Open File →</a>
+
+            </div>
+
+        </div>
+
+        <!-- CASE 02 -->
+
+        <div class="case-card active-case reveal">
+
+            <img src="images/case2.jpg" alt="Wammy House">
+
+            <div class="case-overlay">
+
+                <span>02</span>
+
+                <h3>Wammy’s House</h3>
+
+                <p>
+                    Investigation into successor candidates
+                    and hidden psychological conditioning systems.
+                </p>
+
+                <a href="#">Access Records →</a>
+
+            </div>
+
+        </div>
+
+        <!-- CASE 03 -->
+
+        <div class="case-card reveal">
+
+            <img src="images/case1.jpg" alt="Yotsuba Group">
+
+            <div class="case-overlay">
+
+                <span>03</span>
+
+                <h3>Yotsuba Group</h3>
+
+                <p>
+                    Corporate conspiracy connected to manipulated
+                    killings and internal power structures.
+                </p>
+
+                <a href="#">Read Evidence →</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- INVESTIGATION RECORDS -->
+<!-- ========================= -->
+
+<section id="all-cases" class="all-cases hidden-records">
+
+    <div class="records-header reveal">
+
+        <p>ARCHIVE DATABASE</p>
+
+        <h2>INVESTIGATION RECORDS</h2>
+
+    </div>
+
+    <div class="records-list">
+
+        <div class="record-item">
+            <span>01</span>
+            <h3>BB Murder Files</h3>
+        </div>
+
+        <div class="record-item">
+            <span>02</span>
+            <h3>Lind L Tailor Broadcast</h3>
+        </div>
+
+        <div class="record-item">
+            <span>03</span>
+            <h3>Death Note Surveillance</h3>
+        </div>
+
+        <div class="record-item">
+            <span>04</span>
+            <h3>Misa Amane Observation</h3>
+        </div>
+
+        <div class="record-item">
+            <span>05</span>
+            <h3>Task Force Internal Analysis</h3>
+        </div>
+
+    </div>
+
+</section>
+
+
+<div class="divider"></div>
+
+
+<!-- =========================
+     ANALYSIS SECTION
+========================= -->
+
+<section class="analysis-section" id="analysis">
+
+    <div class="analysis-left reveal">
+
+        <p class="analysis-label">
+            THE L ANALYSIS
+        </p>
+
+        <h2 class="analysis-title">
+            PATTERN <br>
+            RECOGNITION <br>
+            & HUMAN <br>
+            BEHAVIOR.
+        </h2>
+
+        <p class="analysis-text">
+            Every investigation begins with observation.
+            Human behavior leaves patterns behind.
+            Speech timing, emotional shifts, routines,
+            inconsistencies and silence reveal more
+            than direct evidence.
+        </p>
+
+        <p class="analysis-text">
+            My analysis framework isolates anomalies,
+            tracks psychological intent and reconstructs
+            hidden motives through logical deduction.
+            Facts first. Emotion never.
+        </p>
+
+    </div>
+
+    <div class="analysis-right reveal reveal">
+
+        <div class="analysis-card">
+
+            <div class="analysis-number">
+                01
+            </div>
+
+            <h3>Behavioral Profiling</h3>
+
+            <p>
+                Detect emotional inconsistencies,
+                manipulation patterns and deception.
+            </p>
+
+        </div>
+
+        <div class="analysis-card reveal">
+
+            <div class="analysis-number">
+                02
+            </div>
+
+            <h3>Evidence Correlation</h3>
+
+            <p>
+                Cross-reference fragmented data
+                to reveal hidden connections.
+            </p>
+
+        </div>
+
+        <div class="analysis-card reveal">
+
+            <div class="analysis-number">
+                03
+            </div>
+
+            <h3>Psychological Mapping</h3>
+
+            <p>
+                Predict actions through motive,
+                pressure points and cognitive habits.
+            </p>
+
+        </div>
+
+        <div class="analysis-card reveal">
+
+            <div class="analysis-number">
+                04
+            </div>
+
+            <h3>Anomaly Detection</h3>
+
+            <p>
+                Identify impossible variables
+                ignored by conventional analysis.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<div class="divider"></div>
+
+<!-- ========================= -->
+<!-- METHODS -->
+<!-- ========================= -->
+
+<section id="methods">
+  <div class="container">
+    <div class="methods-layout">
+      <div class="methods-intro">
+        <div class="section-label reveal">The L Method</div>
+        <h2 class="section-title reveal">My approach<br>to solving<br>the impossible.</h2>
+        <p class="methods-desc reveal">
+          Five core pillars form the foundation of every investigation. 
+          Logic is the compass. Facts are the map. 
+          And deduction is the path to truth.
+        </p>
+        <p class="methods-tagline reveal">— The systematic elimination of impossibilities.</p>
+      </div>
+
+      <div class="methods-grid reveal">
+        <div class="method-item">
+          <div class="method-icon-wrap">
+            <svg class="method-icon" viewBox="0 0 24 24" fill="none" stroke="#c8a96e" stroke-width="1.2">
+              <circle cx="12" cy="12" r="3"/>
+              <circle cx="12" cy="12" r="7" stroke-dasharray="2 2"/>
+              <path d="M12 2v4M12 18v4M2 12h4M18 12h4"/>
+              <path d="M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M18.4 5.6l-2.8 2.8M8.4 15.6l-2.8 2.8"/>
+            </svg>
+          </div>
+          <div class="method-name">Observation</div>
+          <div class="method-desc">Notice everything. The smallest detail can be the key.</div>
+          <div class="method-line"></div>
+        </div>
+        <div class="method-item">
+          <div class="method-icon-wrap">
+            <svg class="method-icon" viewBox="0 0 24 24" fill="none" stroke="#c8a96e" stroke-width="1.2">
+              <rect x="3" y="3" width="8" height="8" rx="1"/>
+              <rect x="13" y="3" width="8" height="8" rx="1"/>
+              <rect x="3" y="13" width="8" height="8" rx="1"/>
+              <rect x="13" y="13" width="8" height="8" rx="1"/>
+            </svg>
+          </div>
+          <div class="method-name">Analysis</div>
+          <div class="method-desc">Break the unknown into logical components.</div>
+          <div class="method-line"></div>
+        </div>
+        <div class="method-item">
+          <div class="method-icon-wrap">
+            <svg class="method-icon" viewBox="0 0 24 24" fill="none" stroke="#c8a96e" stroke-width="1.2">
+              <path d="M12 2 L15 8 L21 9 L16.5 14 L18 20 L12 17 L6 20 L7.5 14 L3 9 L9 8 Z"/>
+            </svg>
+          </div>
+          <div class="method-name">Deduction</div>
+          <div class="method-desc">Connect the dots that others overlook.</div>
+          <div class="method-line"></div>
+        </div>
+        <div class="method-item">
+          <div class="method-icon-wrap">
+            <svg class="method-icon" viewBox="0 0 24 24" fill="none" stroke="#c8a96e" stroke-width="1.2">
+              <path d="M12 3 L12 7M12 17 L12 21M5 12 L3 12M21 12 L19 12"/>
+              <circle cx="12" cy="12" r="5"/>
+              <path d="M12 9 L12 12 L14 14"/>
+            </svg>
+          </div>
+          <div class="method-name">Logic</div>
+          <div class="method-desc">Eliminate the impossible; what remains is truth.</div>
+          <div class="method-line"></div>
+        </div>
+        <div class="method-item">
+          <div class="method-icon-wrap">
+            <svg class="method-icon" viewBox="0 0 24 24" fill="none" stroke="#c8a96e" stroke-width="1.2">
+              <path d="M8 3 C8 3 6 5 6 9 C6 13 9 15 9 18 L15 18 C15 15 18 13 18 9 C18 5 16 3 16 3 Z"/>
+              <path d="M9 21 L15 21M10 18 L10 21M14 18 L14 21"/>
+              <circle cx="12" cy="10" r="2.5"/>
+            </svg>
+          </div>
+          <div class="method-name">Focus</div>
+          <div class="method-desc">Clear mind. Endless necessity. Relentless focus.</div>
+          <div class="method-line"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ========================= -->
+<!-- Mind Games -->
+<!-- ========================= -->
+
+<section class="mind-games" id="mind-games">
+
+  <div class="container">
+
+    <div class="mind-header reveal">
+      <span class="section-tag">Strategic Simulations</span>
+      <h2>Mind Games & Deduction Systems</h2>
+      <p> Every game reveals a pattern.Every pattern reveals intent.</p>
+
+    </div>
+
+    <div class="games-grid">
+
+      <div class="game-card reveal">
+        <div class="game-icon">♟</div>
+          <h3>Chess.com</h3>
+          <p>Long-form strategic prediction and positional warfare.</p>
+
+          <a href="https://www.chess.com/member/nulcase" target="_blank"> Enter Match → </a>
+       </div>
+
+    <div class="game-card reveal">
+      <div class="game-icon">♚</div>
+        <h3>Lichess</h3>
+        <p>Pure analytical combat without distractions.</p>
+
+        <a href="https://lichess.org/@/nulcase" target="_blank"> Open Profile → </a>
+      </div>
+
+    <div class="game-card reveal">
+      <div class="game-icon">◉</div>
+        <h3>Among Us</h3>
+        <p>Behavioral reading, deception analysis and social deduction.</p>
+
+        <a href="#"> Impostor Files → </a>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<div class="divider"></div>
+
+<!-- ========================= -->
+<!-- NOTES -->
+<!-- ========================= -->
+
+<section id="notes">
+  <div class="container">
+    <div style="margin-bottom:50px">
+      <div class="section-label reveal">Latest Notes</div>
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <h2 class="section-title reveal">Investigation<br>Updates</h2>
+        <a href="#" class="view-all reveal" style="animation-delay:0.2s">View All →</a>
+      </div>
+    </div>
+    <div class="notes-grid">
+      <div class="timeline reveal-left">
+        <div class="timeline-item">
+          <div class="timeline-date">May 30, 2007</div>
+          <div class="timeline-title">New lead in Kira investigation</div>
+          <div class="timeline-body">Behavioral pattern shift detected. Subject appears to have reacquired the Death Note. Cross-referencing with mortality data.</div>
+          <svg class="timeline-icon" viewBox="0 0 28 28" fill="none" stroke="#c8a96e" stroke-width="1"><rect x="4" y="5" width="20" height="18" rx="1"/><path d="M4 10h20M9 5V3M19 5V3M8 15h12M8 19h8"/></svg>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">Apr 22, 2007</div>
+          <div class="timeline-title">Wammy's House report updated</div>
+          <div class="timeline-body">Succession protocols reviewed. Near and Mello files have been updated with new assessment data. Cross-referencing anomalies.</div>
+          <svg class="timeline-icon" viewBox="0 0 28 28" fill="none" stroke="#c8a96e" stroke-width="1"><rect x="4" y="5" width="20" height="18" rx="1"/><path d="M4 10h20M9 5V3M19 5V3M8 15h12M8 19h8"/></svg>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">Mar 18, 2007</div>
+          <div class="timeline-title">Matsuda Note correction analyzed</div>
+          <div class="timeline-body">Inconsistency in case notes identified and corrected. Three anomalous Kira-attributed deaths removed from count pending verification.</div>
+          <svg class="timeline-icon" viewBox="0 0 28 28" fill="none" stroke="#c8a96e" stroke-width="1"><rect x="4" y="5" width="20" height="18" rx="1"/><path d="M4 10h20M9 5V3M19 5V3M8 15h12M8 19h8"/></svg>
+        </div>
+      </div>
+      <div class="reveal-right" style="display:flex;flex-direction:column;justify-content:center;align-items:center;min-height:300px;position:relative">
+        <!-- Large decorative L -->
+        <div style="position:relative;text-align:center">
+          <div style="font-family:var(--font-display);font-size:clamp(180px,20vw,280px);font-weight:900;color:rgba(200,169,110,0.04);line-height:1;letter-spacing:-8px;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:0;white-space:nowrap">L</div>
+          <div style="position:relative;z-index:1;text-align:center">
+            <div style="font-family:var(--font-mono);font-size:11px;letter-spacing:4px;color:var(--gold);margin-bottom:16px">CASE. JUSTICE. TRUTH.</div>
+            <div style="width:1px;height:80px;background:linear-gradient(180deg,var(--gold-dim),transparent);margin:0 auto 20px;"></div>
+            <div style="font-family:var(--font-mono);font-size:10px;letter-spacing:2px;color:var(--mist);line-height:2">
+              All cases filed<br>under strict<br>confidentiality<br>protocol.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ========================= -->
+<!-- CONTACT -->
+<!-- ========================= -->
+
+<section id="contact">
+
+  <div class="container">
+
+    <div class="contact-inner">
+
+      <div class="contact-left reveal-left">
+
+        <div class="section-label">Contact</div>
+        <div class="contact-tagline">
+          Serious<br>Inquiries<br><span>Only.</span>
+        </div>
+        <p class="contact-note">
+          If you have information that can help from justice, 
+          get in touch. All communications are secured and end-to-end encrypted.
+          Response not guaranteed. Response not expected. Truth is.
+        </p>
+        <div class="encrypted-badge">
+          <div class="encrypted-dot"></div>
+          All communications encrypted
+        </div>
+      </div>
+      <!-- <div class="contact-form reveal-right"> -->
+      <form id="contactForm"class="contact-form reveal-right" action="https://formspree.io/f/xkoeowqa"method="POST">
+
+        <div class="form-row">
+
+        <div class="form-group">
+          <label>Identifier</label>
+          <input type="text"name="name" placeholder="Your alias or name" required>
+        </div> 
+
+        <div class="form-group"> <label>Secure Channel</label>
+          <input type="email" name="email" placeholder="Encrypted address" required>
+        </div>
+
+        </div>
+
+        <div class="form-group"> <label>Subject Classification</label>
+          <input type="text" name="subject" placeholder="Case reference or subject" required>
+        </div>
+
+        <div class="form-group"> <label>Message</label>
+
+          <textarea name="message" placeholder="Describe the situation. Facts only. Emotions are irrelevant."required></textarea>
+
+        </div>
+
+        <button class="btn-submit" type="submit">
+          <span>Secure Message →</span>
+        </button>
+
+        <p id="success-msg"></p>
+ 
+      </form>
+
+        <p style="font-family:var(--font-mono);font-size:9px;color:var(--mist);margin-top:14px;letter-spacing:1.5px;line-height:1.8">
+          All communications are monitored and end-to-end confidential.
+        </p>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<div class="divider"></div>
+
+<!-- ========================= -->
+<!-- FOOTER -->
+<!-- ========================= -->
+
+<footer class="footer">
+
+  <!-- TOP LINE -->
+  <div class="footer-line"></div>
+
+  <div class="footer-container">
+
+    <!-- LEFT -->
+    <div class="footer-brand">
+
+      <img src="images\logo.jpg" alt="L Logo"class="footer-logo">
+
+      <div>
+
+        <h3> Ryuzaki</h3>
+        <p> Detective Portfolio</p>
+
+      </div>
+
+    </div>
+
+    <!-- CENTER -->
+    <div class="footer-links">
+
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#cases">Cases</a>
+      <a href="#analysis">Analysis</a>
+      <a href="#methods">Methods</a>
+      <a href="#games">Games</a>
+      <a href="#notes">Notes</a>
+
+    </div>
+
+    <!-- RIGHT -->
+    <div class="footer-social">
+
+      <a href="https://www.chess.com/member/nulcase" target="_blank"><i class="fa-solid fa-chess-knight"></i></a>
+
+      <a href="https://www.instagram.com/nulcase/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+
+      <a href="https://t.me/nulcase" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+
+      <a href="mailto:nulzenx@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i> </a>
+
+      <a href="https://lichess.org/@/nulcase" target="_blank"><i class="fa-solid fa-chess-knight"></i></a>
+
+    </div>
+
+  </div>
+
+  <!-- BOTTOM -->
+  <div class="footer-bottom">
+
+    <p> © 2007 L Lawliet. All rights reserved.</p>
+
+    <span> Justice. Truth. Logic.</span>
+
+  </div>
+
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
